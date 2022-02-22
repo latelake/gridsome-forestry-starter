@@ -35,6 +35,38 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
+- name: token_tools_airdrop_start
+  type: text
+  config:
+    required: false
+  label: Token Tools
+- name: airdrop_erc-20_tokens_in_a_single_transaction
+  type: text
+  config:
+    required: false
+  label: Airdrop ERC-20 Tokens in a single transaction
+- name: chain
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Binance Chain
+    - Huobi Chain
+    - Polygon Chain
+    - Fantom Chain
+    - Ropsten Testnet Chain
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Chain
+- name: token_address__contract_
+  type: text
+  config:
+    required: false
+  label: Token Address (Contract)
 pages:
 - projects/ios-concept.md
 - projects/sunk.md
